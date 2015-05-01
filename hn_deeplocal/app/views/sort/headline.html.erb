@@ -1,0 +1,5 @@
+<ul>
+	<% @items.each do |i| %>
+		<li><a href="<%= i[:url] %>"><%= i[:title] %></a> comments: <a href="<%= i[:c_url] %>"><%= i[:comments] %></a></li>
+	<% end %>
+</ul>
